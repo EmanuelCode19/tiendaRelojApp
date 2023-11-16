@@ -1,0 +1,86 @@
+extends ./layout/index
+
+block contenido
+  main.container.mt-5 
+    .row 
+      .col-md-5 
+        img(src=`/img/${reloj.imagen}.webp`, alt="imagen reloj" class="img-fluid")
+
+      .col-md-7
+        h1 #{reloj.nombre}
+
+        p 
+          svg.icon.icon-tabler.icon-tabler-coin(xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewbox='0 0 24 24' stroke-width='1.5' stroke='#2c3e50' fill='none' stroke-linecap='round' stroke-linejoin='round')
+            path(stroke='none' d='M0 0h24v24H0z' fill='none')
+            path(d='M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0')
+            path(d='M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 1 0 0 4h2a2 2 0 1 1 0 4h-2a2 2 0 0 1 -1.8 -1')
+            path(d='M12 7v10')
+
+
+          | #{reloj.precio}
+
+        p
+          svg.icon.icon-tabler.icon-tabler-package(xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewbox='0 0 24 24' stroke-width='1.5' stroke='#2c3e50' fill='none' stroke-linecap='round' stroke-linejoin='round')
+            path(stroke='none' d='M0 0h24v24H0z' fill='none')
+            path(d='M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5')
+            path(d='M12 12l8 -4.5')
+            path(d='M12 12l0 9')
+            path(d='M12 12l-8 -4.5')
+            path(d='M16 5.25l-8 4.5')
+
+
+          | #{reloj.cantidad} Disponibles
+
+        p  #{reloj.descripcion}
+
+        form(action="/reloj" method="POST")
+          .form-group 
+            label(for="nombre") Escriba Su Nombre 
+            input#nombre(type="text" placeholder="Tu Nombre" name="nombre" class="form-control",value=nombre)
+          .form-group 
+            select(name='quantity' autocomplete='off' tabindex='0')
+              option(value='1' selected='') 1 
+              option(value='2') 2 
+              option(value='3') 3 
+              option(value='4') 4 
+              option(value='5') 5 
+              option(value='6') 6 
+              option(value='7') 7 
+              option(value='8') 8 
+              option(value='9') 9 
+              option(value='10') 10 
+              option(value='11') 11 
+              option(value='12') 12 
+              option(value='13') 13 
+              option(value='14') 14 
+              option(value='15') 15 
+              option(value='16') 16 
+              option(value='17') 17 
+              option(value='18') 18 
+              option(value='19') 19 
+              option(value='20') 20 
+              option(value='21') 21 
+              option(value='22') 22 
+              option(value='23') 23 
+              option(value='24') 24 
+              option(value='25') 25 
+              option(value='26') 26 
+              option(value='27') 27 
+              option(value='28') 28 
+              option(value='29') 29 
+              option(value='30') 30 
+          input.btn.btn-success.btn-block(type="submit", value="comprar ahora")
+
+          
+
+
+
+
+    
+
+
+
+
+
+
+
