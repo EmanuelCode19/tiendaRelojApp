@@ -18,7 +18,7 @@ app.set('view engine','pug');
 
 app.use((req,res,next)=> {
     res.locals.year = new Date().getFullYear()  
-    res.locals.title = "Agencia de Viajes"
+    res.locals.title = "The watches rd"
      next();
 })
 //agregar body parser

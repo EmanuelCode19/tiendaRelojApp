@@ -1,17 +1,18 @@
 import { Sequelize } from "sequelize";
 import db from "../config/db.js";
 
-export const Compra = db.define('compraReloj',{
+export const Comprareloj = db.define('comprareloj',{
     nombreCliente:{
         type:Sequelize.STRING
     },
     cantidad:{
-        type: Sequelize.STRING
+        type:Sequelize.STRING
     },
     nombreProducto:{
-        type: Sequelize.STRING
+        type:Sequelize.STRING
     },
     precio:{
         type:Sequelize.STRING
     }
-}) 
+
+})

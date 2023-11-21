@@ -11,7 +11,8 @@ h1, h2, h3 {
     color: #15B9D5;
 }
 h1 {
-    font-size: 3.4rem;
+    font-size: 3rem;
+    text-align: center;
 }
 h2 {
     font-size: 2.4rem;
@@ -80,7 +81,7 @@ p {
     line-height: 2;
 }
 .navegacion {
-    background-color: #15B9D5;
+    background-color: #353435;
 }
 header .nav a {
     font-family: 'Staatliches', cursive;

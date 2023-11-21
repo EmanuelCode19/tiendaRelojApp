@@ -15,6 +15,6 @@ router.get('/testimoniales',paginaTestimoniales)
 
 router.post('/testimoniales',guardarTestimonial)
 
-router.post('/reloj',guardarReloj)
+router.post('/reloj/:slug',guardarReloj)
 
 export default router;
