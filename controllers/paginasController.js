@@ -106,7 +106,7 @@ const guardarReloj = async (req,res) => {
                 precio: precio
             })   
             
-            res.redirect(`https://wa.me/18098219146?text=Hola, soy ${nombre} quiero procesar la compra de ${quantity} unidades del reloj: ${reloj} precio: ${precio}`)
+            res.redirect(`https://wa.me/18098219146?text=Hola, soy ${nombre} quiero procesar la compra de ${quantity} unidades del reloj: ${reloj} precio: ${precio} y en total a pagar:${quantity * precio}`)
            
         } catch (error) {
             console.log(error
